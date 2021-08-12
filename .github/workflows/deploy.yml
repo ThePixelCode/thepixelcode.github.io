@@ -14,6 +14,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
+      - uses: actions/cache@v1 # this allows for re-using node_modules caching, making builds a bit faster.
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Setup
         run: npm ci
@@ -21,13 +27,7 @@ jobs:
       - name: Test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
-    - uses: actions/cache@v1 # this allows for re-using node_modules caching, making builds a bit faster.
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Build
-      run: |
-        npm install
-        npm run-script deploy
+      - name: Build
+        run: |
+          npm install
+          npm run-script deploy
