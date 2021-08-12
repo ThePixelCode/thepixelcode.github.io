@@ -1,4 +1,5 @@
 # [misterbug5.github.io](https://misterbug5.github.io)
+[![Test, Build and Deploy page](https://github.com/misterbug5/misterbug5.github.io/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/misterbug5/misterbug5.github.io/actions/workflows/main.yml)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0 and [Bootstrap](https://getbootstrap.com/).
 
