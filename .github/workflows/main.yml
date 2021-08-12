@@ -3,7 +3,7 @@ name: Test, Build and Deploy page
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   deploy:
