@@ -38,6 +38,6 @@ describe('PageNotFoundComponent', () => {
   it('should contain "😢"', () => {
     const title: HTMLElement = fixture.nativeElement;
     const p = title.querySelector('p')!;
-    expect(p.textContent).toEqual('😢');
+    expect(p.textContent).toContain('😢');
   });
 });
