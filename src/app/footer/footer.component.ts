@@ -12,4 +12,10 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  footerList:string[]=[
+    'Home',
+    'FAQs',
+    'Contact us'
+  ]
+
 }
