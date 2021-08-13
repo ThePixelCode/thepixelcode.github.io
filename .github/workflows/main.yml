@@ -31,6 +31,8 @@ jobs:
         run: |
           npm install
           npm run-script deploy
+      - name: Make 404.html
+        run: cp docs/index.html docs/404.html
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
