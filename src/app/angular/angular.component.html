@@ -1,0 +1,13 @@
+<h1>Angular</h1>
+<p>This are my projects build in Angular</p>
+<div class="container-lg">
+    <div class="row row-cols-1">
+        <div class="col" *ngFor="let project of projectList">
+            <div class="row row-cols-1">
+                <h2 class="col fs-3">{{project.name}}</h2>
+                <p class="col">{{project.desc}}</p>
+                <a href="{{project.githubURL}}" class="col">Source code</a>
+            </div>
+        </div>
+    </div>
+</div>

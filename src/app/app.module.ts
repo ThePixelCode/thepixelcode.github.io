@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CommonModule } from '@angular/common';
+import { SublinkComponent } from './sublink/sublink.component';
+import { AngularComponent } from './angular/angular.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { CommonModule } from '@angular/common';
     NavBarComponent,
     FooterComponent,
     PageNotFoundComponent,
-    MainPageComponent
+    MainPageComponent,
+    SublinkComponent,
+    AngularComponent
   ],
   imports: [
     CommonModule,
