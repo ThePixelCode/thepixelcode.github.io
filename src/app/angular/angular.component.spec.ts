@@ -22,4 +22,14 @@ describe('AngularComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a title', () => {
+    const native:HTMLElement = fixture.nativeElement;
+    const h1 = native.querySelector('h1');
+    expect(h1?.textContent).toEqual('Angular');
+  });
+
+  it('should have projectList', () => {
+    expect(component.projectList).toBeDefined();
+  });
 });

@@ -22,4 +22,14 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have "All Copyrights Reserved"', () => {
+    const native:HTMLElement = fixture.nativeElement;
+    const p = native.querySelector('p');
+    expect(p?.textContent).toEqual('All Copyrights Reserved');
+  });
+
+  it('should have footerList', () => {
+    expect(component.footerList).toBeDefined();
+  });
 });

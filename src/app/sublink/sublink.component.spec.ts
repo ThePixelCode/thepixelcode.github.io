@@ -13,13 +13,9 @@ describe('SublinkComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
+  it('Should create the component', () => {
     fixture = TestBed.createComponent(SublinkComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

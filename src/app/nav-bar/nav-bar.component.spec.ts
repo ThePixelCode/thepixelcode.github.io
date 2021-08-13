@@ -22,4 +22,22 @@ describe('NavBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have mainLinks defined', () => {
+    expect(component.mainLinks).toBeDefined();
+  });
+
+  it('should have "a" tags', () => {
+    const native: HTMLElement = fixture.nativeElement;
+    const item = native.querySelectorAll('a');
+    for (let i = 0; i < component.mainLinks.length; i++) {
+      let iItem = item.item(i);
+      if (i == 0) {
+        expect(iItem.className).toContain('active');
+      } else {
+        expect(iItem.className).not.toContain('active');
+      }
+      expect(iItem.textContent).toEqual(component.mainLinks[i]);
+    }
+  });
 });
