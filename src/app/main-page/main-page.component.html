@@ -1,8 +1,8 @@
 <h1 class="text-center m-5 p-5">Hi 👋, I'm misterbug</h1>
 <p class="text-center m-3 p-5">I'm a programmer and this are my projects:</p>
-<div class="container m-5 p-5">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-        <div class="col my-1 p-1 card" *ngFor="let card of cardList">
+<div class="container my-5 p-5 mx-auto">
+    <div class="row row-cols-auto">
+        <div class="col m-1 p-1 card" *ngFor="let card of cardList">
             <div class="row row-cols-1">
                 <h2 class="col fs-4 m-2 p-2">{{card.title}}</h2>
                 <p class="col text-wrap m-2 p-2">{{card.desc}}</p>
