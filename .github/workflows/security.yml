@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test please ignore
-        run: echo ${{  github.event.actor  }}
+        run: echo ${{  github.event.pull_request.actor  }}
