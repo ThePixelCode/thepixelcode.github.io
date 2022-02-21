@@ -1,0 +1,13 @@
+name: Auto accept Dependabot
+
+on:
+  pull_request:
+    types:
+      - review_requested
+
+jobs:
+  accept:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test please ignore
+        run: echo ${{  github.event  }}
