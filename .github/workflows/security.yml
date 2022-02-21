@@ -2,8 +2,10 @@ name: Auto accept Dependabot
 
 on:
   pull_request:
-    types:
-      - review_requested
+    #types:
+    # - review_requested
+
+  pull_request_review:
 
 jobs:
   accept:
