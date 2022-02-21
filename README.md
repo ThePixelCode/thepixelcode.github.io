@@ -16,3 +16,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Deploy
 
 Deploy is automated via Github Actions using `npm run-script deploy`.
+
+## Test Branch
+
+Don't use this branch, could explote everything, you were warned.
