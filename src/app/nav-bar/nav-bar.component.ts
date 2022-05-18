@@ -19,4 +19,11 @@ export class NavBarComponent implements OnInit {
 export class Link {
     public linkTitle:string
     public linkTo:string
+    constructor(linkTitle:string, linkTo:string){
+
+        this.linkTitle = linkTitle;
+
+        this.linkTo = linkTo;
+
+    }
 }
