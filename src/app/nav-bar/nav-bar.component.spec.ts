@@ -37,7 +37,7 @@ describe('NavBarComponent', () => {
       } else {
         expect(iItem.className).not.toContain('active');
       }
-      expect(iItem.textContent).toEqual(component.mainLinks[i]);
+      expect(iItem.textContent).toEqual(component.mainLinks[i].linkTitle);
     }
   });
 });
