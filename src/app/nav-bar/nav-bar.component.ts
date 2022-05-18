@@ -12,6 +12,11 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  mainLinks:string[] = ['Main Page', 'Projects List']
+  mainLinks: Link[] = [{linkTitle: 'Main Page', linkTo: 'main-page'}, {linkTitle: 'Projects List', linkTo: 'projects'}]
 
+}
+
+export class Link {
+    public linkTitle:string
+    public linkTo:string
 }

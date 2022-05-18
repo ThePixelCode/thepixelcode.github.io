@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Link } from '../nav-bar/nav-bar.component'
 
 @Component({
   selector: 'app-footer',
@@ -12,10 +13,10 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  footerList:string[]=[
-    'Home',
-    'FAQs',
-    'Contact us'
+  footerList: Link[]=[
+    {linkTitle: 'Home', linkTo: 'main-page'},
+    {linkTitle: 'FAQs', linkTo: 'faq'},
+    {linkTitle: 'Contact us', linkTo: 'contact'}
   ]
 
 }
