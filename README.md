@@ -1,18 +1,38 @@
-# [misterbug5.github.io](https://misterbug5.github.io)
-[![Test, Build and Deploy page](https://github.com/misterbug5/misterbug5.github.io/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/misterbug5/misterbug5.github.io/actions/workflows/main.yml)
+# create-svelte
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0 and [Bootstrap](https://getbootstrap.com/).
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-Also I make this using [Github Actions](https://docs.github.com/en/actions).
+## Creating a project
 
-## Build
+If you're seeing this, you've probably already done this step. Congrats!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## Running unit tests
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Developing
 
-## Deploy
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-Deploy is automated via Github Actions using `npm run-script deploy`.
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
