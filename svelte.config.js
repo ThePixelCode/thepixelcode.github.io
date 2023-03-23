@@ -12,7 +12,7 @@ const config = {
 	kit: {
 		adapter: adapter({
 			pages: "docs",
-			fallback: "404.html",
+			//fallback: "404.html",
             jekyll: false,
             domain: ""
 		}),
