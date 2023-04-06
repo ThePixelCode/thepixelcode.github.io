@@ -4,5 +4,7 @@
 	import Footer from "$lib/Footer.svelte";
 </script>
 <Navbar/>
-<slot />
+<div>
+	<slot />
+</div>
 <Footer/>

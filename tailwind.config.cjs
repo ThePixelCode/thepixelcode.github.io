@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       "height":{
         "half-screen": "50vh"
+      },
+      "gridTemplateRows":{
+        "auto-1fr-auto": "auto 1fr auto"
       }
     },
   },
