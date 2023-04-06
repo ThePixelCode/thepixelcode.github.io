@@ -1,9 +1,10 @@
-<footer class="bg-gray-800 text-white text-center py-10">
-    <div class="flex flex-row">
-        <div class="m-4">Home</div>
-        <div class="m-4">Contact me</div>
+<footer class="bg-gray-800 text-neutral-400 text-center py-10">
+    <div class="flex flex-row justify-center">
+        <a href="/" class="m-4">Home</a>
+        <a href="/about" class="m-4">About</a>
+        <a href="/contact" class="m-4">Contact me</a>
     </div>
-    <div class="">
+    <div class="text-neutral-600">
         Copyleft under GPL v3
     </div>
 </footer>
