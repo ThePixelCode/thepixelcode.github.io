@@ -1,4 +1,4 @@
-<footer class="bg-gray-800 text-neutral-400 text-center py-10">
+<footer class="bg-gray-800 text-neutral-400 text-center py-10 absolute bottom-[-12rem] w-full">
     <div class="flex flex-row justify-center">
         <a href="/" class="m-4">Home</a>
         <a href="/about" class="m-4">About</a>
