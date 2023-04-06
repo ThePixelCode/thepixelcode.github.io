@@ -21,12 +21,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Setup
+      - name: Setup 📦
         run: npm ci
 
-      - name: Test
+      - name: Test 🧪
         run: npm run-script test:unit -- --run
-      - name: Build
+      - name: Build ⚙️
         run: npm run-script build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
