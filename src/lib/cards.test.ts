@@ -1,17 +1,24 @@
 import { describe, it, expect } from "vitest";
-import { card } from "./cards";
+import { Card } from "./cards";
+import { ProjectLanguajes } from "./project";
 
 describe("Test Card", ()=>{
-    it("Check behavor when 0 projects", ()=>{
-        let cardToTest = new card("", "", "", 0)
-        expect(cardToTest.Count).toBe("Comming Soon...")
+    it("Check localization with different numbers", ()=>{
+        let cardToTest = new Card(ProjectLanguajes.Rust)
+        cardToTest.count = 0
+        expect(cardToTest.getCountAsString()).toBe("Comming Soon...")
+        cardToTest.count = 1
+        expect(cardToTest.getCountAsString()).toBe("There is 1 project")
+        cardToTest.count = 5
+        expect(cardToTest.getCountAsString()).toBe("There are 5 projects")
     })
-    it("Check behavor when 1 projects", ()=>{
-        let cardToTest = new card("", "", "", 1)
-        expect(cardToTest.Count).toBe("There is 1 project")
-    })
-    it("Check behavor when 1+ projects", ()=>{
-        let cardToTest = new card("", "", "", 2)
-        expect(cardToTest.Count).toBe("There are 2 projects")
+    it("Test beheavor of count", ()=>{
+        let cardToTest = new Card(ProjectLanguajes.Rust)
+        cardToTest.count = 0
+        expect(cardToTest.count).toBe(0)
+        cardToTest.count = 1
+        expect(cardToTest.count).toBe(1)
+        cardToTest.count = -1
+        expect(cardToTest.count).toBe(0)
     })
 })
